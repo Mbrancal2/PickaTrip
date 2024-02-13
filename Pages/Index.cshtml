@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="jumbotron jumbotron-fluid text-white" style="height: 500px; background: #aaa; background-image: url(/images/istockphoto-1300296030-612x612.jpg);">
+  <div class="container">
+    <h1 class= "display-1 text-center">PickaTrip</h1>
+    <p class="text-center">Find a place to go.</p>
+  </div>
+</div>
+<form class=" form-inline" >
+  <label for="inlineFormSelectDest">Destinations</label>
+  <select class="selectpicker" data-style="btn-primary" data-live-search="true asp-for="Destination" asp-items="Model.Destinations">
+  </select>
+</form>
